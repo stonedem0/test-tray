@@ -52,7 +52,7 @@ async function hooverMove(obj) {
         };
     };
     let hoover = obj.hoover;
-    return {hoover, count}
+    return {hoover, count};
 };
 
 //cleanedUpCheck checks if robot gets dirt patches and returns true if it did and false if didn't.
