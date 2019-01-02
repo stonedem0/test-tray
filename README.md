@@ -11,4 +11,10 @@ npm install
 node index.js
 
 ```
+For test:
+
+```
+npm test
+
+```
 
