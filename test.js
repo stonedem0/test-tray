@@ -9,7 +9,7 @@ describe('Basic result test', () => {
         assert.equal(res.count, 1);
         assert.equal(res.hoover.x, 1);     
         assert.equal(res.hoover.y, 3); 
-    })
+    });
     it('should return current position if room size is exceeded', async() => {
         let data = await hoover.getData('./wrong.txt');
         let text = await hoover.parseData(data);
@@ -17,5 +17,5 @@ describe('Basic result test', () => {
         assert.equal(res.count, 1);
         assert.equal(res.hoover.x, 1);     
         assert.equal(res.hoover.y, -1); 
-    })
-})
+    });
+});
