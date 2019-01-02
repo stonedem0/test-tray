@@ -1,0 +1,14 @@
+{
+  "name": "test-tray",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Asya L.",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}

@@ -28,7 +28,7 @@ async function hooverMove(obj) {
     for (i = 0; i < obj.instr.length; i++) {
         if (obj.hoover.x > obj.room.x || obj.hoover.y > obj.room.y || obj.hoover.x < 0 || obj.hoover.y < 0) {
             console.log(`Exceeded! The room is only ${obj.room.x}x${obj.room.y}. Unfortunately your hoover cannot walk over the walls :(`);
-            return;
+            continue;
         };
         if (cleanedUpCheck(obj.dirt, obj.hoover)) {
             count++;
@@ -81,4 +81,4 @@ module.exports = {
     parseData,
     hooverMove
 
-}
+};

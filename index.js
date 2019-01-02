@@ -1,7 +1,7 @@
 const hoover = require('./hoover');
 
 async function main() {
-    let data = await hoover.getData('./input.txt');
+    let data = await hoover.getData('./wrong.txt');
     let text = await hoover.parseData(data);
     let res = await hoover.hooverMove(text);
     console.log(`Final hoover position X:${res.hoover.x} Y:${res.hoover.y}`);
